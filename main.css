@@ -1,0 +1,45 @@
+body{background:#ECF0F1}
+
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#19A68C;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#717a7e;animation-delay:-0.25s}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(400%)}
+  50%{transform:translate(400%, 400%)}
+  75%{transform:translate(0, 400%)}
+}
+
+.round
+{    
+  max-width: 250%;
+  max-height: 250%;
+  border-radius: 100%;
+  margin-right: 500px;  
+}
+
+.round2
+{
+border: 3px solid black;
+border-radius: 100%;
+padding: 45px;
+background-color: white;
+color: white;
+}
+
+
+.round3
+{ 
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    padding: 45px;
+}
