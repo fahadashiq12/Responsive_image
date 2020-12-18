@@ -147,38 +147,83 @@ body{background:#ECF0F1}
 	right: 0;
 	margin: auto;
 	}
-	
-	
+
 	@keyframes circle-rotate {
-	from {
-	transform: rotate(0deg) translateX(200px) rotate(0deg);
+		from {
+		transform: rotate(0deg) translateX(200px) rotate(0deg);
+		}
+		to {
+		transform: rotate(360deg) translateX(200px) rotate(-360deg);
+		}
+		}
+
+	
+	.rotating-circle2	
+	{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 100px 100px, blue, #eee);
+	animation: circle-rotate2 5s linear infinite;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 	}
-	to {
-	transform: rotate(360deg) translateX(200px) rotate(-360deg);
+
+	@keyframes circle-rotate2 {	
+		from
+		 {
+			transform: rotate(0deg) translateX(100px) rotate(0deg);
+		 }
+		to
+		 {
+			transform: rotate(360deg) translateX(100px) rotate(-360deg);
+		 } 
+		}
+
+	.rotating-circle3
+	{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 100px 100px, blue, #eee);
+	animation: circle-rotate3 25s linear infinite;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 	}
+	   
+	@keyframes circle-rotate3 
+	{	
+		from
+		 {
+			transform: rotate(0deg) translateX(50px) rotate(0deg);
+		 }
+		to
+		 {
+			transform: rotate(360deg) translateX(50px) rotate(-360deg);
+		 } 
 	}
 
 
-
-
-
-
-
-
-
-.load_image
-{
+ .load_image
+ {
   border-image: url(/Img/DSC_0009.jpg);
   border: 5px solid #162534;
   width: calc(100% - 0px);
-  height: calc(100% - 0px);
-  
-}
+  height: calc(100% - 0px);  
+ }
 
 
-@keyframes rotate {
-100% {transform: rotate(360deg);}
-} 
+ @keyframes rotate {
+ 100% {transform: rotate(360deg);} 
+ }  
 
 
 @import url('https://fonts.googleapis.com/css?family=Barlow');
